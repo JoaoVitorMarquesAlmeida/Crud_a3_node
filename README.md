@@ -1,10 +1,12 @@
 # Crud_a3_node
-projeto de crud da a3 foi utilizado node js, express, nodemon, xampp para iniciar servidor sql, heidi para criar tabelas, e insomnia para manipular as ações de crud com a api rest
-(lembrar de instalar os node modules e iniciar o servidor de acordo com o video)
+projeto de crud com rest Api,da a3 de sistemas distribuidos, foi utilizado node.js, javascript, express, nodemon, xampp para iniciar servidor sql, heidiSQL para criar a  Database e a tabela, e insomnia para manipular as ações de crud com a api rest e database sql,
+
+⚠️(lembrar de instalar os node modules e iniciar o servidor de acordo com o video e descrição a seguir)
 
 •Sobre a criação do servidor, Database etc:
 
 🔴primeiro ponto:
+
 -após iniciar um servidor mysql, (com xampp, por exemplo), inicie um sgdb de sua preferencia, (como por exemplo o heidiSQL),
 crie uma nova sessão,deixe o tipo de rede em "MySql TCP/IP", (ou algo por estas linhas dependendo do sgdb de sua preferencia), em lybrary selecione "libmariadb.dll" deixe o servidor/ip,a porta, usuario e senha no padrão sql,e em banco de dados, selecione o que voce criou anteriormente e clique eu abrir.
 
