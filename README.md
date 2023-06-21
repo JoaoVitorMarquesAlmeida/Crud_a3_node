@@ -19,7 +19,7 @@ segundo ponto:
 CREATE TABLE fontesenergia (
    id INT NOT NULL AUTO INCREMENT PRIMARY KEY,
    DATA DATE,
-   Fonte VARCHAR(100),
+   fonte VARCHAR(100),
    origem VARCHAR(100),
    STATUS ENUM("renovavel", "naorenovavel",     "cancelado") DEFAULT "renovavel"
 );
@@ -68,7 +68,19 @@ Delete:
 
 (lembrando que nos metodos update e delete o "id" deve ser substituido pelo numero que é criado junto com o objeto no metodo post, é possivel ver eles no começo do "objeto" no metodo get do read!)
 
-(lembrando tambem que na criação "Create" e na atualização "update" a requisição deve seguir a padronagem feita na criação da table)
+(lembrando tambem que na criação "Create" e na atualização "update" a requisição deve seguir a padronagem feita na criação da table (case sensitive escrito exatamente desta maneira):
+   
+DATA  (data em formato amaricano)
+  
+fonte (nome da fonte de energia "string")
+
+origem (nome do pais de origem "string)
+
+STATUS (pode ser "renovavel" ou "naorenovavel)
+
+
+esta padronagem acima deve ser utilizada tanto para com a criação, quanto para a atualização no sistema crud, utilizando o form com nome e valor a frente seguindo a implementacao acima mostrada, para ser compativel com a implementacao do crud)
+
    
    
 
