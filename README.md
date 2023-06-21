@@ -1,5 +1,5 @@
 # Crud_a3_node
-projeto de crud com rest Api,da a3 de sistemas distribuidos, foi utilizado node.js, javascript, express, nodemon, xampp para iniciar servidor sql, heidiSQL para criar a  Database e a tabela, e insomnia para manipular as ações de crud com a api rest e database sql,
+projeto de crud com rest Api,da a3 de sistemas distribuidos, foi utilizado node.js, javascript, express, nodemon, xampp para iniciar servidor sql, heidiSQL para criar a  Database e a tabela, e insomnia para manipular as ações de crud com a api rest e database sql.
 
 ⚠️(lembrar de instalar os node modules e iniciar o servidor de acordo com o video e descrição a seguir)
 
