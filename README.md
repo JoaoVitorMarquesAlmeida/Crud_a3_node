@@ -4,18 +4,19 @@ projeto de crud da a3 foi utilizado node js, express, nodemon, xampp para inicia
 
 •Sobre a criação do servidor, Database etc:
 
-primeiro ponto:
+🔴primeiro ponto:
 -após iniciar um servidor mysql, (com xampp, por exemplo), inicie um sgdb de sua preferencia, (como por exemplo o heidiSQL),
 crie uma nova sessão,deixe o tipo de rede em "MySql TCP/IP", (ou algo por estas linhas dependendo do sgdb de sua preferencia), em lybrary selecione "libmariadb.dll" deixe o servidor/ip,a porta, usuario e senha no padrão sql,e em banco de dados, selecione o que voce criou anteriormente e clique eu abrir.
 
-segundo ponto:
+🔴segundo ponto:
 
 -ja dentro do ambiente do sgdb escolhido crie o "database" ou base de dados dentro do servidor criado anteriormente utilizando o seguinte comando sql dentro da aba de "consulta":
 
-"CREATE DATABASE controle_criacao;"
+👨‍💻"CREATE DATABASE controle_criacao;"
 
 -dentro do database "controle_criacao", criado no passo anterior, crie uma table com as informações/parametros, que iremos manipular utilizando o crud dentro do projeto do git, utilizando o seguinte comando sql novamente na aba de "consulta":
 
+👨‍💻
 CREATE TABLE fontesenergia (
    id INT NOT NULL AUTO INCREMENT PRIMARY KEY,
    DATA DATE,
@@ -26,60 +27,73 @@ CREATE TABLE fontesenergia (
 
 e rode-a na aba de "consulta", assim a "padronagem para os http requests posteriores vai ser criado!
 
-(após isto se quiser testar criando um registro dentro do próprio sgdb de sua escolha utilizando a padronagem criada acima pela table "fontesenergia", para testar fique a vontade).
+⚠️(após isto se quiser testar criando um registro dentro do próprio sgdb de sua escolha utilizando a padronagem criada acima pela table "fontesenergia", para testar fique a vontade).
 
-terceiro ponto:
+🔴terceiro ponto:
 
 dentro da ide de sua escolha utilizando o terminal, use os seguintes comandos para ter certeza que todos os modulos necessarios estão instalados:
 
+👨‍💻
 "npm install express" (vai fazer com que seja criada a pasta "node modules"
 
+👨‍💻
 "npm install -g nodemon"(ira tornar a atualização de servidor com alterções no projeto automatica)
 
-quarto ponto:
+🔴quarto ponto:
 
 para rodar o servidor dentro da ide use a seguinte linha de comando no terminal dentro da ide:
 
+👨‍💻
 "nodemon .\index.js"
 
 assim recebera um log no console indicando que o servidor foi iniciado!
 
-quinto e ultimo ponto:
+🔴quinto e ultimo ponto:
 
 para testar as funcionalidades de crud, utilizando um testador de http request como insomnia por exemplo utilize os seguinte endpoints:
 
-Create:
+👨‍💻Create:
 
    metodo:POST
    "http://localhost:3000/atendimentos"
 
-Read:
+👨‍💻Read:
 
    metodo:GET
    "http://localhost:3000/atendimentos"
 
-Update:
+👨‍💻Update:
    metodo:
    "http://localhost:3000/atendimento/id
 
-Delete:
+👨‍💻Delete:
    metodo:DELETE
    "http://localhost:3000/atendimento/id
 
-(lembrando que nos metodos update e delete o "id" deve ser substituido pelo numero que é criado junto com o objeto no metodo post, é possivel ver eles no começo do "objeto" no metodo get do read!)
+⚠️(lembrando que nos metodos update e delete o "id" deve ser substituido pelo numero que é criado junto com o objeto no metodo post, é possivel ver eles no começo do "objeto" no metodo get do read!)
 
-(lembrando tambem que na criação "Create" e na atualização "update" a requisição deve seguir a padronagem feita na criação da table (case sensitive escrito exatamente desta maneira):
-   
+⚠️(lembrando tambem que na criação "Create" e na atualização "update" a requisição deve seguir a padronagem feita na criação da table (case sensitive escrito exatamente desta maneira):
+
+👨‍💻  
 DATA  (data em formato amaricano)
   
 fonte (nome da fonte de energia "string")
 
 origem (nome do pais de origem "string)
 
-STATUS (pode ser "renovavel" ou "naorenovavel)
+STATUS (pode ser "renovavel" ou "naorenovavel
+escritos exatamente desta meneira)
 
 
-esta padronagem acima deve ser utilizada tanto para com a criação, quanto para a atualização no sistema crud, utilizando o form com nome e valor a frente seguindo a implementacao acima mostrada, para ser compativel com a implementacao do crud)
+⚠️(esta padronagem acima deve ser utilizada tanto para com a criação, quanto para a atualização no sistema crud, utilizando o form com nome e valor a frente seguindo a implementacao acima mostrada, para ser compativel com a implementacao do crud)
+
+estas são as ações necessárias para rodar o codigo de crud com api rest e servidor sql sem problemas! 
+
+👨‍💻aluno:joão vitor marques
+📒Uc personalizada de sistemas distribuidos
+👨‍🎓universidade anhembi morumbi paulista SP
+
+
 
    
    
